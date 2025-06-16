@@ -4,9 +4,9 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-## 🔍 Summary of Announcements
+## Summary of Announcements
 
-### 📦 Mosaic AI (GenAI & ModelOps)
+### Mosaic AI (GenAI & ModelOps)
 - **Agent Bricks**: Auto-optimized domain-specific agents with evaluation and tuning built-in.
 - **MLflow 3.0**: Unified experimentation, observability, and governance for GenAI and ML.
 - **AI Functions in SQL**: Run GenAI functions (e.g. `ai_parse_document`) directly in SQL.
@@ -19,7 +19,7 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-### 🧠 Databricks SQL
+### Databricks SQL
 - **Lakebase**: Fully managed Postgres integrated into the Lakehouse.
 - **Lakebridge**: Migration toolkit for 25+ legacy data warehouses.
 - **Power Platform Connector**: Real-time access to Databricks from Power Apps, Copilot, etc.
@@ -29,7 +29,7 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-### ⚙️ Lakeflow (ETL, Pipelines, Orchestration)
+### Lakeflow (ETL, Pipelines, Orchestration)
 - **Lakeflow**: Unify pipelines for ETL and orchestration.
 - **Lakeflow Designer**: No-code interface for building ETL pipelines.
 - **Declarative Pipelines**: Open-sourced DLT framework powered by Spark 4.0.
@@ -49,7 +49,7 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-### 🛡️ Unity Catalog (Governance Layer)
+### Unity Catalog (Governance Layer)
 - **UC Metrics**: Semantic layer to define consistent metrics across dashboards & models.
 - **Attribute-Based Access Control (ABAC)**: Fine-grained, dynamic policy enforcement.
 - **Tag Policies**: Governance via tag-based rules.
@@ -61,7 +61,7 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-### 🌐 Community Edition
+### Community Edition
 - **Community Edition**: Free, hands-on Databricks learning workspace.
 
 📁 [`community-edition/`](./community-edition)
