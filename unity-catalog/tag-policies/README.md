@@ -1,58 +1,40 @@
 # Tag Policies
 
-## Overview
-Tag Policies in Unity Catalog enable governance through tag-based rules, allowing organizations to implement and enforce data governance policies using a flexible, metadata-driven approach. This feature provides a powerful way to manage and control data access, usage, and lifecycle based on data characteristics.
-
-## Key Features
-- **Tag-Based Rules**: Governance policies based on data tags
-- **Flexible Policy Framework**: Customizable rule definitions
-- **Automated Enforcement**: Automatic policy application and monitoring
-- **Integration with ABAC**: Combined with attribute-based access control
-- **Audit Capabilities**: Comprehensive policy compliance tracking
-
-## Why It Matters
-- Simplifies governance implementation
-- Provides flexible policy management
-- Enhances data control and compliance
-- Reduces governance overhead
-
-## Demo Guide
-1. **Setup**
-   - Configure Tag Policies workspace
-   - Define tag schema
-   - Set up policy framework
-
-2. **Key Demo Scenarios**
-   - Tag definition and management
-   - Policy creation and testing
-   - Compliance monitoring
-   - Audit and reporting
+- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+- **Official Documentation**: [Unity Catalog Tag Policies Documentation](https://docs.databricks.com/tag-policies)
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/tag-policies)
-- [Blog Post](https://www.databricks.com/blog/tag-policies)
-- [Technical Deep Dive](https://www.databricks.com/blog/tag-policies-technical)
-- [Policy Guide](https://docs.databricks.com/tag-policies/guide)
+- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your)
+- [Video: Automated Data Governance Deep Dive](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
 
-## Code Examples
-```sql
--- Example tag policies will be added here
-```
+   [![Automated Data Governance YouTube Link](https://img.youtube.com/vi/o529ypvgJkk/mqdefault.jpg)](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
 
-## Best Practices
-- Define clear tag standards
-- Implement proper policy testing
-- Monitor policy effectiveness
-- Follow governance best practices
+## Overview
+
+Tag Policies enable automated data governance through intelligent classification and tag-based rules. AI-powered detection automatically identifies sensitive data (PII, PHI, financial), while single policies apply consistently across all matching data assets.
+
+## Key Features
+
+- **Automated Classification**: AI-powered detection of sensitive data types
+- **Tag-Based Policies**: Single policy applies to all data with matching tags
+- **ABAC Integration**: Works seamlessly with attribute-based access control
+- **Governance Hub**: Centralized visibility into tagged data and policies
+- **Real-Time Updates**: Changes propagate instantly across all tagged assets
+
+## Product Availability
+- **Tag Policies**: Available in Public Preview on AWS, Azure, and GCP
+- **Automated Classification**: Available in Public Preview
+- **Governance Hub**: Available in Public Preview
+
+## Use Cases
+
+- **PII Protection**: Automatically mask all columns tagged as "PII" based on user attributes
+- **Financial Data Governance**: Apply strict access controls to "financial" or "confidential" data
+- **Cross-Catalog Consistency**: Ensure same protection levels across all catalogs
+- **Compliance Automation**: Enforce regulatory requirements based on data classification
 
 ## Related Features
-- UC Metrics
-- Attribute-Based Access Control (ABAC)
-- Data Classification
-- Anomaly Detection
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/tag-policies
-- Community: community.databricks.com 
+- [Attribute-Based Access Control (ABAC)](../abac/)
+- [Data Classification](../data-classification/)
+- [Anomaly Detection](../anomaly-detection/)
+- [Unity Catalog Metrics](../uc-metrics/) 

@@ -61,10 +61,10 @@ This repository organizes and summarizes all major product announcements from th
 
 ---
 
-### Community Edition
+### Databricks Free Edition
 - **Community Edition**: Free, hands-on Databricks learning workspace.
 
-📁 [`community-edition/`](./community-edition)
+📁 [`free-edition/`](./free-edition)
 
 ---
 
@@ -72,7 +72,3 @@ This repository organizes and summarizes all major product announcements from th
 Additional reference materials, internal docs, blogs, and slide decks.
 
 📁 [`_resources/`](./_resources)
-
----
-
-> ✅ Tip: Use this repo as a launchpad for demo prep, enablement sessions, or customer-facing decks.

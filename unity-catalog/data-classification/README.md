@@ -1,58 +1,43 @@
 # Data Classification
 
-## Overview
-Data Classification in Unity Catalog provides automated detection and classification of sensitive data, enabling organizations to identify, protect, and govern their data assets effectively. This feature helps maintain compliance and security by automatically categorizing data based on its content and sensitivity.
-
-## Key Features
-- **Automated Detection**: Automatic identification of sensitive data
-- **Custom Classifications**: Define and apply custom classification rules
-- **Real-time Processing**: Immediate classification of new data
-- **Integration with Governance**: Seamless integration with Unity Catalog
-- **Compliance Support**: Built-in compliance framework support
-
-## Why It Matters
-- Automates sensitive data identification
-- Enhances data protection and compliance
-- Reduces manual classification effort
-- Improves data governance effectiveness
-
-## Demo Guide
-1. **Setup**
-   - Configure Data Classification workspace
-   - Define classification rules
-   - Set up monitoring and alerts
-
-2. **Key Demo Scenarios**
-   - Rule definition and testing
-   - Automated classification
-   - Compliance monitoring
-   - Classification reporting
+- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+- **Official Documentation**: [Data Classification Documentation](https://docs.databricks.com/data-classification)
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/data-classification)
-- [Blog Post](https://www.databricks.com/blog/data-classification)
-- [Technical Deep Dive](https://www.databricks.com/blog/data-classification-technical)
-- [Classification Guide](https://docs.databricks.com/data-classification/guide)
+- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your)
+- [Video: Automated Data Governance](https://www.youtube.com/watch?v=o529ypvgJkk&t=1s)
 
-## Code Examples
-```sql
--- Example classification rules will be added here
-```
+   [![Automated Data Governance YouTube Link](https://img.youtube.com/vi/o529ypvgJkk/mqdefault.jpg)](https://www.youtube.com/watch?v=o529ypvgJkk&t=1s)
 
-## Best Practices
-- Define clear classification standards
-- Implement proper rule testing
-- Monitor classification accuracy
-- Follow compliance best practices
+## Overview
+
+Data Classification intelligently detects and tags sensitive data across your data estate, automatically identifying PII, PHI, and other sensitive information within 24 hours. It integrates with ABAC to automatically protect sensitive data based on access control policies.
+
+## Key Features
+
+- **Automated Detection**: Intelligently detect and tag sensitive data across Unity Catalog
+- **24-Hour Scanning**: New data scanned within 24 hours to detect new PII
+- **ABAC Integration**: Automatically protect sensitive data based on access control policies
+- **Tag-Based Policies**: Apply consistent protection across all data with matching tags
+- **Governance Hub**: Centralized monitoring and policy enforcement dashboard
+- **Request for Access (RFA)**: Streamlined ad hoc data access requests
+
+## Product Availability
+- **Data Classification**: Available in Beta on AWS, Azure, and GCP
+- **Automated PII Detection**: Available in Beta
+- **Tag-Based Policies**: Available in Beta
+- **ABAC Integration**: Available in Beta
+- **Governance Hub Integration**: Available in Beta
+
+## Use Cases
+
+- **Compliance and Privacy**: Meet regulatory requirements for data protection (GDPR, CCPA, HIPAA)
+- **Security Enhancement**: Automatically identify and protect PII, PHI, and financial information
+- **Access Control**: Enable fine-grained access control based on data sensitivity
+- **Data Governance**: Streamline governance workflows with automated classification
 
 ## Related Features
-- UC Metrics
-- Attribute-Based Access Control (ABAC)
-- Tag Policies
-- Anomaly Detection
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/data-classification
-- Community: community.databricks.com 
+- [UC Metrics](../uc-metrics/)
+- [Attribute-Based Access Control (ABAC)](../abac/)
+- [Tag Policies](../tag-policies/)
+- [Data Quality Monitoring](../anomaly-detection/) 

@@ -1,58 +1,40 @@
 # Attribute-Based Access Control (ABAC)
 
-## Overview
-Attribute-Based Access Control (ABAC) in Unity Catalog provides fine-grained, dynamic policy enforcement based on attributes of users, resources, and the environment. This feature enables organizations to implement sophisticated access control policies that adapt to changing conditions and requirements.
-
-## Key Features
-- **Fine-Grained Control**: Granular access control based on multiple attributes
-- **Dynamic Policies**: Real-time policy evaluation and enforcement
-- **Context-Aware**: Consider environmental and temporal factors
-- **Scalable Architecture**: Efficient policy management at scale
-- **Audit Trail**: Comprehensive logging of access decisions
-
-## Why It Matters
-- Provides more flexible and precise access control
-- Reduces policy management overhead
-- Enhances security and compliance
-- Adapts to changing business requirements
-
-## Demo Guide
-1. **Setup**
-   - Configure ABAC workspace
-   - Define attribute schemas
-   - Set up policy framework
-
-2. **Key Demo Scenarios**
-   - Policy definition and management
-   - Dynamic access control
-   - Policy testing and validation
-   - Audit and compliance
+- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+- **Official Documentation**: [Unity Catalog ABAC Documentation](https://docs.databricks.com/abac)
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/abac)
-- [Blog Post](https://www.databricks.com/blog/abac)
-- [Technical Deep Dive](https://www.databricks.com/blog/abac-technical)
-- [Policy Guide](https://docs.databricks.com/abac/policies)
+- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your)
+- [Video: Automated Data Governance Deep Dive](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
 
-## Code Examples
-```sql
--- Example ABAC policies will be added here
-```
+   [![Automated Data Governance YouTube Link](https://img.youtube.com/vi/o529ypvgJkk/mqdefault.jpg)](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
 
-## Best Practices
-- Define clear attribute schemas
-- Implement proper policy testing
-- Monitor policy effectiveness
-- Follow security best practices
+## Overview
+
+Attribute-Based Access Control (ABAC) provides dynamic, context-aware policy enforcement based on user attributes, resource characteristics, and environmental factors. Unlike traditional RBAC, ABAC adapts to changing conditions and scales across large data estates.
+
+## Key Features
+
+- **Dynamic Policy Evaluation**: Real-time access decisions based on multiple attributes
+- **Automated Enforcement**: Policies apply across entire data estate automatically
+- **Request for Access (RFA)**: Streamlined workflow for data access requests
+- **Governance Hub Integration**: Centralized monitoring and compliance tracking
+- **Performance Optimized**: Efficient evaluation without impacting query performance
+
+## Product Availability
+- **ABAC**: Available in Public Preview on AWS, Azure, and GCP
+- **Governance Hub**: Available in Public Preview
+- **Request for Access**: Available in Public Preview
+
+## Use Cases
+
+- **PII Protection**: Mask sensitive data based on user role, location, and data sensitivity
+- **Time-Based Access**: Grant access to financial data only during business hours
+- **Compliance Enforcement**: Ensure only certified users access regulated data
+- **Cross-Domain Governance**: Apply consistent policies across business units
 
 ## Related Features
-- UC Metrics
-- Tag Policies
-- Data Classification
-- Anomaly Detection
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/abac
-- Community: community.databricks.com 
+- [Tag Policies](../tag-policies/)
+- [Data Classification](../data-classification/)
+- [Anomaly Detection](../anomaly-detection/)
+- [Unity Catalog Metrics](../uc-metrics/)

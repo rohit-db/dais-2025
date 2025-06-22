@@ -1,7 +1,7 @@
-# Community Edition
+# Databricks Freee Edition
 
 ## Overview
-Community Edition is a free, hands-on Databricks learning workspace designed for individuals and teams to explore, experiment, and learn Databricks at no cost. It provides access to core Databricks features in a simplified environment, ideal for training, education, and personal projects.
+Databricks Free Edition is a free, hands-on Databricks learning workspace designed for individuals and teams to explore, experiment, and learn Databricks at no cost. It provides access to core Databricks features in a simplified environment, ideal for training, education, and personal projects.
 
 ## Key Features
 - **Free Access**: No-cost Databricks workspace
@@ -18,7 +18,7 @@ Community Edition is a free, hands-on Databricks learning workspace designed for
 
 ## Demo Guide
 1. **Setup**
-   - Sign up for Community Edition
+   - Sign up for Free\ Edition
    - Explore the workspace and resources
    - Access sample notebooks and datasets
 

@@ -1,58 +1,41 @@
-# Anomaly Detection
+# Data Quality Monitoring
 
-## Overview
-Anomaly Detection in Unity Catalog identifies abnormal usage patterns in governed datasets, helping organizations detect potential security threats, data quality issues, and compliance violations. This feature provides automated monitoring and alerting for unusual data access and usage patterns.
-
-## Key Features
-- **Pattern Detection**: Automated identification of unusual patterns
-- **Real-time Monitoring**: Continuous monitoring of data access
-- **Customizable Alerts**: Configurable alerting for anomalies
-- **Integration with Governance**: Seamless integration with Unity Catalog
-- **Historical Analysis**: Trend analysis and pattern learning
-
-## Why It Matters
-- Enhances data security and compliance
-- Provides early warning of potential issues
-- Reduces manual monitoring effort
-- Improves data governance effectiveness
-
-## Demo Guide
-1. **Setup**
-   - Configure Anomaly Detection workspace
-   - Define detection rules
-   - Set up alerting system
-
-2. **Key Demo Scenarios**
-   - Rule definition and testing
-   - Anomaly monitoring
-   - Alert management
-   - Pattern analysis
+- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+- **Official Documentation**: [Data Quality Monitoring Documentation](https://docs.databricks.com/aws/en/lakehouse-monitoring/data-quality-monitoring)
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/anomaly-detection)
-- [Blog Post](https://www.databricks.com/blog/anomaly-detection)
-- [Technical Deep Dive](https://www.databricks.com/blog/anomaly-detection-technical)
-- [Detection Guide](https://docs.databricks.com/anomaly-detection/guide)
+- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your)
+- [Unity Catalog Documentation](https://docs.databricks.com/data-governance/unity-catalog/)
 
-## Code Examples
-```python
-# Example detection rules will be added here
-```
+## Overview
 
-## Best Practices
-- Define clear detection thresholds
-- Implement proper alerting
-- Monitor detection accuracy
-- Follow security best practices
+Data Quality Monitoring intelligently detects and helps resolve data quality issues across all your tables. It provides automated monitoring for data freshness and completeness, ensuring trusted data quality at scale.
+
+## Key Features
+
+- **Freshness Monitoring**: Tracks how recently data has been updated with configurable thresholds
+- **Completeness Monitoring**: Ensures data volumes are as expected across entire schemas
+- **Intelligent Detection**: Uses data intelligence to identify quality issues automatically
+- **Root Cause Analysis**: Helps uncover the source of data quality issues
+- **Automated Alerting**: Configurable notifications for quality issues
+- **Health Indicators**: Provides at-a-glance data health status
+
+## Product Availability
+- **Data Quality Monitoring**: Available in Beta on AWS, Azure, and GCP
+- **Freshness Monitoring**: Available in Beta
+- **Completeness Monitoring**: Available in Beta
+- **Health Indicators**: Available in Beta
+- **Root Cause Analysis**: Available in Beta
+
+## Use Cases
+
+- **Data Pipeline Monitoring**: Ensure ETL processes deliver complete and fresh data
+- **Business Intelligence Reliability**: Maintain trust in dashboards with quality indicators
+- **Compliance and Governance**: Meet regulatory requirements for data quality
+- **Operational Excellence**: Proactively identify and resolve quality issues
 
 ## Related Features
-- UC Metrics
-- Attribute-Based Access Control (ABAC)
-- Tag Policies
-- Data Classification
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/anomaly-detection
-- Community: community.databricks.com 
+- [UC Metrics](../uc-metrics/)
+- [Attribute-Based Access Control (ABAC)](../abac/)
+- [Tag Policies](../tag-policies/)
+- [Data Classification](../data-classification/) 
