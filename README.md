@@ -1,6 +1,7 @@
 # DAIS 2025 Announcements Repository
 
-This repository organizes and summarizes all major product announcements from the **Databricks Data + AI Summit 2025**, grouped by key platform categories. It is designed as a field enablement toolkit for Solution Architects, SEs, and anyone demoing or discussing the latest.
+This repository organizes and summarizes all major product announcements from the **Databricks Data + AI Summit 2025**, grouped by key platform categories. 
+It is designed as a field enablement toolkit.
 
 ---
 
