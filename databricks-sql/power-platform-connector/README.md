@@ -1,58 +1,31 @@
 # Power Platform Connector
 
 ## Overview
-The Power Platform Connector enables real-time access to Databricks data from Microsoft Power Platform applications, including Power Apps, Power Automate, and Copilot Studio. This integration brings governed data access to low-code/no-code applications.
+The Power Platform Connector for Databricks enables seamless, real-time access to your lakehouse data directly from Microsoft's low-code/no-code application suite. This integration allows citizen developers and business users to build rich applications, automate workflows, and create custom copilots using Power Apps, Power Automate, and Microsoft Copilot Studio, all powered by live, governed data from Databricks.
 
-## Key Features
-- **Real-Time Access**: Direct connection to Databricks data
-- **Power Platform Integration**: Native support for Power Apps, Power Automate, and Copilot
-- **Governed Access**: Unity Catalog integration for security
-- **Low-Code/No-Code**: Easy integration with Power Platform tools
-- **Enterprise Security**: Advanced security and compliance features
-
-## Why It Matters
-- Enables citizen developers to access Databricks data
-- Simplifies integration with Microsoft Power Platform
-- Maintains data governance and security
-- Accelerates application development
-
-## Demo Guide
-1. **Setup**
-   - Configure Power Platform Connector
-   - Set up Unity Catalog integration
-   - Configure access controls
-
-2. **Key Demo Scenarios**
-   - Power Apps integration
-   - Power Automate workflows
-   - Copilot Studio integration
-   - Security and governance
+By bridging the gap between the Power Platform and the Databricks Data Intelligence Platform, organizations can empower their teams to create and deploy data-driven applications faster than ever, without compromising on security or governance. All data access is managed through Unity Catalog, ensuring that the right users have access to the right data.
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/power-platform)
-- [Blog Post](https://www.databricks.com/blog/power-platform)
-- [Technical Deep Dive](https://www.databricks.com/blog/power-platform-technical)
-- [Integration Guide](https://docs.databricks.com/power-platform/integration)
 
-## Code Examples
-```python
-# Example integration code will be added here
-```
+### Blogs & Docs
+*   [Official Documentation](https://docs.databricks.com/en/integrations/bi/power-bi.html)
 
-## Best Practices
-- Implement proper access controls
-- Monitor usage and performance
-- Use appropriate security measures
-- Follow integration best practices
+### Sessions & Videos
 
-## Related Features
-- Unity Catalog
-- Lakebase
-- Databricks SQL
-- AI Functions in SQL
+| | |
+| --- | --- |
+| [![Data + AI Summit 2025 Keynote](https://img.youtube.com/vi/ul8cRLIP_Vk/0.jpg)](https://www.youtube.com/watch?v=ul8cRLIP_Vk) | **Data + AI Summit 2025 Keynote**<br/>The connector was announced as part of the main keynote. |
 
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/power-platform
-- Community: community.databricks.com 
+## Why It Matters
+
+*   **Empowers Citizen Developers**: Allows business users to build applications on top of trusted, governed data in Databricks without needing to be data engineers.
+*   **Accelerates Application Development**: Drastically reduces the time it takes to build and deploy data-driven applications and automations.
+*   **Maintains Strong Governance**: Ensures that all data access from the Power Platform adheres to the centralized security and governance policies defined in Unity Catalog.
+*   **Unlocks New Use Cases**: Enables the rapid development of custom copilots, AI-powered workflows, and mobile apps that leverage the full power of the lakehouse.
+
+## Key Features
+
+*   **Real-Time Data Access**: Provides a direct, live connection to Databricks data, eliminating data silos and stale copies.
+*   **Broad Power Platform Integration**: Native support for Power Apps, Power Automate, and Microsoft Copilot Studio.
+*   **Governed by Unity Catalog**: All data access is secured and governed by the fine-grained permissions in Unity Catalog.
+*   **Simple Low-Code/No-Code Experience**: Easy to configure and use within the familiar Power Platform development environment.

@@ -1,26 +1,41 @@
 # Unity Catalog Metrics
 
-- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
-- **Official Documentation**: [Unity Catalog Metrics Documentation](https://docs.databricks.com/uc-metrics)
+## Overview
+Unity Catalog Metrics provide a universal semantic layer for the Databricks Data Intelligence Platform, solving the critical challenge of "metric sprawl." It allows organizations to define key business metrics—like "Monthly Recurring Revenue" or "Active Users"—once, in a centralized and governed location. Once defined, these metrics can be reliably reused across the entire platform, from AI/BI Dashboards and Genie to SQL queries and third-party tools.
+
+This "define-once, use-everywhere" approach eliminates the inconsistencies and maintenance burdens that arise when different teams create their own versions of the same KPI. By creating a single source of truth for business logic, Unity Catalog Metrics ensures that everyone in the organization is making decisions based on the same, trusted numbers.
 
 ## Resources
-- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/introduction-unity-catalog-metrics-define-your-business-metrics-once)
-- [Video: Introduction to Unity Catalog Metrics](https://www.youtube.com/watch?v=gMCFWSTgUoQ)
 
-   [![Unity Catalog Metrics YouTube Link](https://img.youtube.com/vi/gMCFWSTgUoQ/mqdefault.jpg)](https://www.youtube.com/watch?v=gMCFWSTgUoQ)
+### Blogs & Docs
+*   [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+*   [Official Documentation: Unity Catalog Metrics](https://docs.databricks.com/en/data-governance/unity-catalog/index.html#metrics)
+*   [Documentation: Metric Views](https://docs.databricks.com/aws/en/metric-views/)
 
-- [Unity Metrics View Documentation](https://docs.databricks.com/aws/en/metric-views/)
+### Sessions & Videos
+| | |
+|---|---|
+| [![Introduction to Unity Catalog Metrics](https://img.youtube.com/vi/gMCFWSTgUoQ/0.jpg)](https://www.youtube.com/watch?v=gMCFWSTgUoQ) | **Introduction to Unity Catalog Metrics: Define Your Business Metrics Once**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/introduction-unity-catalog-metrics-define-your-business-metrics-once) |
 
-## Overview
+## Why It Matters
+*   **Ensures Consistency and Trust**: Eliminates conflicting metric definitions across different teams and tools, providing a single source of truth for KPIs.
+*   **Reduces Redundant Work**: Prevents analysts and data scientists from having to constantly re-implement the same business logic.
+*   **Accelerates Analytics**: Business users get faster, more reliable answers from dashboards and conversational AI because the logic is already defined and certified.
+*   **Simplifies Governance**: Centralizes the management and security of critical business logic, making it easier to audit and control.
 
-Unity Catalog Metrics solves "metric sprawl" by enabling you to define business metrics once as "metric views" in Unity Catalog, then trust them everywhere. Define dimensions and measures using SQL, then query at any grain without creating new views.
+## Key Features
+Unity Catalog Metrics solves "metric sprawl" by enabling you to define business 
+metrics once as "metric views" in Unity Catalog, then trust them everywhere. Define 
+dimensions and measures using SQL, then query at any grain without creating new views.
 
-Organizations face "metric sprawl"—the same business metric (like revenue per active customer) is defined differently across teams, tools, and dashboards. This leads to:
-- **Inconsistent KPIs** across different teams and tools
-- **Repeated logic** with slight variations in each implementation
-- **Unreliable insights** due to conflicting metric definitions
-- **Maintenance overhead** when changes require updates in multiple places
+*   **Centralized Metric Definition**: Define metrics and dimensions once as "metric views" in Unity Catalog using standard SQL.
+*   **Multi-Grain Queries**: Query metrics at any time grain (e.g., daily, monthly, quarterly) from a single metric view without creating redundant copies of the data.
+*   **Governed and Secure**: Apply fine-grained access controls, certifications, and data lineage to your business metrics just like any other data asset in Unity Catalog.
+*   **Platform-Wide Access**: Consume metrics from AI/BI Dashboards, AI/BI Genie, SQL queries, and a growing ecosystem of partner tools.
+*   **Materialization (Upcoming)**: The ability to pre-compute frequently used metric aggregations to improve query performance.
+*   **No-Code and Code Interfaces**: Both technical and non-technical users can define and use metrics through SQL or a graphical interface.
 
+![A diagram showing how a Metric View works in Unity Catalog](https://docs.databricks.com/aws/en/assets/images/what-is-f1090f388428085b3a7cd9a6876f7649.png)
 
 ![What's a Metric view](https://docs.databricks.com/aws/en/assets/images/what-is-f1090f388428085b3a7cd9a6876f7649.png)
 

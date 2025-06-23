@@ -1,40 +1,35 @@
 # Attribute-Based Access Control (ABAC)
 
-- **Official Blog Post**: [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
-- **Official Documentation**: [Unity Catalog ABAC Documentation](https://docs.databricks.com/abac)
+## Overview
+Attribute-Based Access Control (ABAC) is a powerful new capability in Unity Catalog that enables dynamic, fine-grained, and scalable data governance. Unlike traditional Role-Based Access Control (RBAC), which relies on static role definitions, ABAC makes access decisions based on a flexible combination of attributes attached to users, data assets, and the environment.
+
+This allows organizations to create simple, intuitive policies that automatically adapt to changing conditions. For example, a single policy could grant access to data only if a user's `department` attribute matches the data's `department` tag, and only if they are accessing it from a trusted `location`. This approach dramatically simplifies the management of complex security requirements across a large and diverse data estate.
 
 ## Resources
-- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your)
-- [Video: Automated Data Governance Deep Dive](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
 
-   [![Automated Data Governance YouTube Link](https://img.youtube.com/vi/o529ypvgJkk/mqdefault.jpg)](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s)
+### Blogs & Docs
+*   [What's new with Databricks Unity Catalog at Data + AI Summit 2025](https://www.databricks.com/blog/whats-new-databricks-unity-catalog-data-ai-summit-2025)
+*   [Official Documentation: Attribute-Based Access Control](https://docs.databricks.com/en/data-governance/unity-catalog/attribute-based-access-control.html)
 
-## Overview
+### Sessions & Videos
+| | |
+|---|---|
+| [![Automated Data Governance Deep Dive](https://img.youtube.com/vi/o529ypvgJkk/0.jpg)](https://www.youtube.com/watch?v=o529ypvgJkk&t=12s) | **Unleash the Power of Automated Data Governance: Classify, Tag, and Protect Your Most Critical Data**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/unleash-power-automated-data-governance-classify-tag-and-protect-your) |
 
-Attribute-Based Access Control (ABAC) provides dynamic, context-aware policy enforcement based on user attributes, resource characteristics, and environmental factors. Unlike traditional RBAC, ABAC adapts to changing conditions and scales across large data estates.
+## Why It Matters
+*   **Simplifies Complex Governance**: Replaces thousands of complex, static role definitions with a small number of simple, intuitive policies.
+*   **Scales with Your Organization**: Policies automatically apply to new users and new data assets as they are added, without requiring manual updates.
+*   **More Secure and Precise**: Enables more granular and context-aware security rules than are possible with RBAC alone.
+*   **Reduces Administrative Overhead**: Drastically reduces the time and effort required to manage data access controls at scale.
 
 ## Key Features
-
-- **Dynamic Policy Evaluation**: Real-time access decisions based on multiple attributes
-- **Automated Enforcement**: Policies apply across entire data estate automatically
-- **Request for Access (RFA)**: Streamlined workflow for data access requests
-- **Governance Hub Integration**: Centralized monitoring and compliance tracking
-- **Performance Optimized**: Efficient evaluation without impacting query performance
-
-## Product Availability
-- **ABAC**: Available in Public Preview on AWS, Azure, and GCP
-- **Governance Hub**: Available in Public Preview
-- **Request for Access**: Available in Public Preview
-
-## Use Cases
-
-- **PII Protection**: Mask sensitive data based on user role, location, and data sensitivity
-- **Time-Based Access**: Grant access to financial data only during business hours
-- **Compliance Enforcement**: Ensure only certified users access regulated data
-- **Cross-Domain Governance**: Apply consistent policies across business units
+*   **Dynamic Policy Evaluation**: Access decisions are evaluated in real-time based on a combination of user, resource, and environmental attributes.
+*   **Policies Written in SQL**: Define access policies using simple, standard SQL expressions.
+*   **Centralized Governance**: All policies are managed and monitored centrally through Unity Catalog.
+*   **Native Integration**: Works seamlessly across the entire Databricks platform, from SQL queries to notebooks to AI/BI dashboards.
 
 ## Related Features
-- [Tag Policies](../tag-policies/)
-- [Data Classification](../data-classification/)
-- [Anomaly Detection](../anomaly-detection/)
-- [Unity Catalog Metrics](../uc-metrics/)
+*   [Tag Policies](../tag-policies/)
+*   [Data Classification](../data-classification/)
+*   [Anomaly Detection](../anomaly-detection/)
+*   [Unity Catalog Metrics](../uc-metrics/)

@@ -1,58 +1,25 @@
-# Databricks Freee Edition
+# Databricks Free Edition
 
 ## Overview
-Databricks Free Edition is a free, hands-on Databricks learning workspace designed for individuals and teams to explore, experiment, and learn Databricks at no cost. It provides access to core Databricks features in a simplified environment, ideal for training, education, and personal projects.
+Databricks Free Edition is a no-cost platform designed for students, hobbyists, and those learning data and AI skills. It offers access to professional tools for building data and AI projects, including dashboards, machine learning models, and AI agents. Users can learn Python and SQL with interactive notebooks, explore data engineering by building ETL workflows, and visualize data with advanced dashboards. The Free Edition also provides access to self-paced training, an AI-powered assistant for coding help, and a collaborative community where users can share projects and get support. 
 
-## Key Features
-- **Free Access**: No-cost Databricks workspace
-- **Learning Resources**: Built-in tutorials and sample datasets
-- **Core Databricks Features**: Access to notebooks, clusters, and jobs
-- **Self-Service Environment**: Easy sign-up and onboarding
-- **Community Support**: Access to forums and learning groups
-
-## Why It Matters
-- Lowers the barrier to entry for Databricks learning
-- Enables experimentation and skill development
-- Supports training and education initiatives
-- Fosters a collaborative learning community
-
-## Demo Guide
-1. **Setup**
-   - Sign up for Free\ Edition
-   - Explore the workspace and resources
-   - Access sample notebooks and datasets
-
-2. **Key Demo Scenarios**
-   - Running sample notebooks
-   - Exploring data and visualizations
-   - Using clusters and jobs
-   - Engaging with the community
+Note: Free Edition is not intended for production or commercial use.
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/community-edition)
-- [Blog Post](https://www.databricks.com/blog/community-edition)
-- [Getting Started Guide](https://docs.databricks.com/community-edition/getting-started)
-- [Community Forums](https://community.databricks.com)
 
-## Code Examples
-```python
-# Example learning notebooks and code will be added here
-```
+### Blogs & Docs
+*   [Databricks Free Edition Homepage](https://www.databricks.com/learn/free-edition)
+*   [Blog: Learn more about the Free Edition](https://www.databricks.com/blog/community-edition)
 
-## Best Practices
-- Leverage tutorials and sample data
-- Participate in community discussions
-- Use the workspace for experimentation
-- Follow best practices for learning and sharing
+## Why It Matters
+*   Lowers the barrier to entry for learning data and AI on Databricks.
+*   Enables hands-on experimentation and skill development with professional-grade tools.
+*   Supports training and education initiatives for individuals and academic institutions.
+*   Fosters a collaborative learning community for sharing projects and knowledge.
 
-## Related Features
-- Databricks One
-- Databricks Apps
-- Genie
-- Lakebase
-
-## Support
-For questions or issues:
-- Community Forums: https://community.databricks.com
-- Documentation: docs.databricks.com/community-edition
-- Product Support: support@databricks.com 
+## Key Features
+- **Free Access**: A no-cost, personal Databricks workspace.
+- **Learning Resources**: Comes with built-in tutorials, sample datasets, and an AI-powered assistant for coding help.
+- **Core Databricks Features**: Access to notebooks, clusters, and jobs to learn the fundamentals of the platform.
+- **Self-Service Environment**: Easy sign-up and onboarding to get started quickly.
+- **Community Support**: Access to community forums and learning groups.

@@ -1,58 +1,39 @@
-# Managed Connectors
+# Lakeflow Connect (Managed Connectors)
 
 ## Overview
-Managed Connectors provide enterprise-grade connectivity to various data sources and applications, with new support for SQL Server, GA360, ServiceNow, and a row-level ingestion API. These connectors are fully managed, secure, and optimized for performance.
+Lakeflow Connect is the unified ingestion component of Lakeflow, providing reliable, managed data ingestion from a vast array of enterprise applications, databases, and real-time streams. It eliminates the need for data teams to build, host, and maintain fragile custom connectors or stitch together external services.
 
-## Key Features
-- **New Connectors**: Support for SQL Server, GA360, ServiceNow
-- **Row-Level Ingestion**: Granular data ingestion capabilities
-- **Enterprise Security**: Advanced security and compliance features
-- **Performance Optimization**: Optimized for high-throughput data transfer
-- **Governance Integration**: Unity Catalog integration for data lineage
-
-## Why It Matters
-- Simplifies data source connectivity
-- Ensures secure and reliable data transfer
-- Reduces operational complexity
-- Enables governed data access
-
-## Demo Guide
-1. **Setup**
-   - Configure connector workspace
-   - Set up source system connections
-   - Configure Unity Catalog integration
-
-2. **Key Demo Scenarios**
-   - SQL Server integration
-   - GA360 data ingestion
-   - ServiceNow connectivity
-   - Row-level ingestion
+This is accomplished through a library of **Managed Connectors** and a new high-throughput API called **Zerobus**.
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/managed-connectors)
-- [Blog Post](https://www.databricks.com/blog/managed-connectors)
-- [Technical Deep Dive](https://www.databricks.com/blog/managed-connectors-technical)
-- [Connector Guide](https://docs.databricks.com/managed-connectors/guide)
+### Blogs & Docs
+- **Official Documentation**: [Lakeflow Connect](https://docs.databricks.com/aws/en/ingestion/overview)
 
-## Code Examples
-```python
-# Example connector configurations will be added here
-```
+### Sessions & Videos
+| | |
+|---|---|
+| [![Keynote: Announcing Lakeflow](https://img.youtube.com/vi/0pys27kA67U/0.jpg)](https://www.youtube.com/watch?v=0pys27kA67U&t=3835s) | **Keynote: Announcing Lakeflow**<br/>The main keynote announcement covers all of Lakeflow, including Lakeflow Connect and Zerobus. |
+| [![Getting Started With Lakeflow Connect](https://img.youtube.com/vi/TT-O-s28mGI/0.jpg)](https://www.youtube.com/watch?v=TT-O-s28mGI&t=5s) | **Getting Started With Lakeflow Connect**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/getting-started-lakeflow-connect) |
+| [![Eliminate Hops in Your Streaming Architecture with Zerobus](https://img.youtube.com/vi/wrH5wWmFT94/0.jpg)](https://www.youtube.com/watch?v=wrH5wWmFT94&t=18s) | **Eliminate Hops in Your Streaming Architecture with Zerobus**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/eliminate-hops-your-streaming-architecture-zerobus-part-lakeflow) |
+| [![Lakeflow Connect: Easy, Efficient Ingestion From Databases](https://img.youtube.com/vi/sZ3wVoedP64/0.jpg)](https://www.youtube.com/watch?v=sZ3wVoedP64&t=2s) | **Lakeflow Connect: Easy, Efficient Ingestion From Databases**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/lakeflow-connect-easy-efficient-ingestion-databases) |
 
-## Best Practices
-- Use appropriate connector types
-- Implement proper error handling
-- Monitor connector performance
-- Follow security best practices
+## Key Features
+### Managed Connectors
+- **Broad Source Support**: A growing library of fully-managed, enterprise-grade connectors for sources like Salesforce, ServiceNow, Google Analytics, Oracle, SQL Server, and many more.
+- **No-Code / Low-Code Interface**: Ingest data with point-and-click simplicity through a visual UI or automate ingestion via a robust API.
+- **Handles Complexity**: The platform automatically manages operational complexities like schema drift, API changes, and error handling.
+
+### Zerobus
+- **High-Throughput Streaming API**: A new Lakeflow Connect API that allows developers to write event data directly to the lakehouse at very high throughput (100+ MB/s) with near real-time latency (<5 seconds).
+- **Simplified Streaming Infrastructure**: Eliminates the need for external message bus infrastructure (like Kafka or Kinesis) for many common streaming use cases.
+
+## Why It Matters
+Data ingestion is often the most brittle and time-consuming part of data engineering. Lakeflow Connect solves this by:
+- **Simplifying Connections**: Drastically reduces the time and effort required to connect to complex data sources.
+- **Increasing Reliability**: Provides managed, battle-tested connectors that are more robust than custom-built scripts.
+- **Unifying Governance**: All ingested data is immediately available in the lakehouse and governed by Unity Catalog, providing a single source of truth.
 
 ## Related Features
-- Lakeflow Designer
-- Declarative Pipelines
-- Unity Catalog
-- Lakeflow
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/managed-connectors
-- Community: community.databricks.com 
+- [Declarative Pipelines](../declarative-pipelines/)
+- [Lakeflow Designer](../lakeflow-designer/)
+- [Unity Catalog](../../unity-catalog/)

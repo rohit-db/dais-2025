@@ -5,6 +5,22 @@ It is designed as a field enablement toolkit.
 
 ---
 
+## Key Resources
+This section contains the primary, high-level resources covering all major announcements from the Data + AI Summit.
+
+### General Resources
+*   **Data + AI Summit Homepage**: [Watch sessions on-demand](https://www.databricks.com/dataaisummit/)
+*   **Official Announcements Blog**: [All platform announcements](https://www.databricks.com/blog/category/platform/announcements?categories=announcements)
+*   **Databricks Documentation**: [Main documentation portal](https://docs.databricks.com/aws/en/)
+
+### Keynotes
+| | |
+| --- | --- |
+| [![Data + AI Summit 2025 Main Keynote](https://img.youtube.com/vi/ul8cRLIP_Vk/0.jpg)](https://www.youtube.com/watch?v=UfbyzK488Hk) | **Data + AI Summit 2025 Main Keynote**<br/>Covers the Data Intelligence Platform vision and major announcements around Mosaic AI, Lakebase & Databricks Apps. |
+| [![Data + AI Summit 2025 Day 2 Keynote](https://img.youtube.com/vi/0pys27kA67U/0.jpg)](https://www.youtube.com/watch?v=0pys27kA67U) | **Data + AI Summit 2025 Day 2 Keynote**<br/>Dives deeper into product announcements like Lakeflow, Unity Catalog, Databricks SQL & AI/BI. |
+
+---
+
 ## Summary of Announcements
 
 ### Mosaic AI (GenAI & ModelOps)
@@ -17,16 +33,6 @@ It is designed as a field enablement toolkit.
 - **AI Gateway**: Central control for routing, safety, and usage across LLM endpoints.
 
 📁 [`mosaic-ai/`](./mosaic-ai)
-
----
-
-### Databricks SQL
-- **Lakebase**: Fully managed Postgres integrated into the Lakehouse.
-- **Lakebridge**: Migration toolkit for 25+ legacy data warehouses.
-- **Power Platform Connector**: Real-time access to Databricks from Power Apps, Copilot, etc.
-- **Databricks One**: Secure, streamlined access for data consumers.
-
-📁 [`databricks-sql/`](./databricks-sql)
 
 ---
 
@@ -59,6 +65,15 @@ It is designed as a field enablement toolkit.
 - **Iceberg Support**: Enhanced governance and compatibility with Apache Iceberg tables.
 
 📁 [`unity-catalog/`](./unity-catalog)
+
+---
+
+### Databricks SQL
+- **Lakebase**: Fully managed Postgres integrated into the Lakehouse.
+- **Lakebridge**: Migration toolkit for 25+ legacy data warehouses.
+- **Power Platform Connector**: Real-time access to Databricks from Power Apps, Copilot, etc.
+
+📁 [`databricks-sql/`](./databricks-sql)
 
 ---
 

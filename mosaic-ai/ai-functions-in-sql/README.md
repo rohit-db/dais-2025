@@ -1,58 +1,40 @@
 # AI Functions in SQL
 
 ## Overview
-AI Functions in SQL brings the power of Generative AI directly into SQL queries, enabling data analysts and SQL users to leverage advanced AI capabilities without leaving their familiar SQL environment. This feature allows running GenAI functions (like `ai_parse_document`) directly in SQL statements.
 
-## Key Features
-- **SQL-Native AI Functions**: Run GenAI operations directly in SQL queries
-- **Document Processing**: Built-in functions for document parsing and analysis
-- **Text Generation**: Generate and manipulate text within SQL
-- **Integration with Unity Catalog**: Governed access to AI capabilities
-- **Performance Optimized**: Efficient execution of AI operations in SQL context
+AI Functions bring the power of generative AI directly into the hands of data analysts and SQL users, embedding state-of-the-art model intelligence directly into their data pipelines and workflows. This feature allows anyone to use SQL to perform sophisticated AI tasks, such as parsing unstructured documents, analyzing sentiment, and classifying text, without needing to learn complex programming languages or manage separate infrastructure.
 
-## Why It Matters
-- Democratizes AI capabilities for SQL users
-- Eliminates the need for complex Python code or separate AI pipelines
-- Enables real-time AI processing in data workflows
-- Maintains governance and security through Unity Catalog
-
-## Demo Guide
-1. **Setup**
-   - Enable AI Functions in your workspace
-   - Configure necessary permissions
-   - Set up Unity Catalog integration
-
-2. **Key Demo Scenarios**
-   - Document parsing and analysis
-   - Text generation and manipulation
-   - Real-time AI processing in data pipelines
-   - Integration with existing SQL workflows
+With recent enhancements, AI Functions are now significantly faster and more powerful, offering up to 3x the speed and 4x lower cost on large-scale workloads compared to other vendors. The introduction of multi-modal capabilities means you can now seamlessly work across text, images, and other data types, unlocking valuable insights from previously inaccessible enterprise content right within your Databricks SQL environment.
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/ai-functions)
-- [Blog Post](https://www.databricks.com/blog/ai-functions-sql)
-- [Technical Deep Dive](https://www.databricks.com/blog/ai-functions-sql-technical)
-- [Quick Start Guide](https://docs.databricks.com/ai-functions/quickstart)
 
-## Code Examples
-```sql
--- Example SQL queries will be added here
-```
+### Blogs & Docs
+*   [Mosaic AI Announcements at Data + AI Summit 2025](https://www.databricks.com/blog/mosaic-ai-announcements-data-ai-summit-2025)
+*   [Official Documentation: AI Functions](https://docs.databricks.com/en/sql/language-manual/sql-ref-functions-ai.html)
 
-## Best Practices
-- Use appropriate function parameters
-- Monitor function performance
-- Implement proper error handling
-- Follow security best practices
+### Sessions & Videos
+
+| | |
+| --- | --- |
+| [![Building and Scaling Production AI Systems with Mosaic AI](https://img.youtube.com/vi/9C-iZqa3ORc/0.jpg)](https://www.youtube.com/watch?v=9C-iZqa3ORc) | **Building and Scaling Production AI Systems with Mosaic AI**<br/>[View Session Details](https://www.databricks.com/dataaisummit/session/building-and-scaling-production-ai-systems-mosaic-ai) |
+
+## Why It Matters
+
+*   **Democratizes Access to AI**: Empowers millions of SQL users to leverage powerful GenAI capabilities without needing specialized data science skills.
+*   **Unlocks Unstructured Data**: Directly process and analyze complex documents, images, and text within SQL to extract valuable business insights.
+*   **Massively Scalable Performance**: Execute large-scale AI-powered data transformations with unprecedented speed and cost-efficiency.
+*   **Simplifies Data Pipelines**: Eliminates the need for separate tools or complex ETL processes to enrich and transform data with AI.
+
+## Key Features
+
+*   **SQL-Native GenAI**: Access powerful foundation models through simple SQL function calls.
+*   **Vastly Improved Performance**: Up to 3x faster and 4x lower cost on large-scale data transformation workloads.
+*   **Multi-Modal Capabilities**: Work seamlessly with a variety of data types, including text and images.
+*   **Advanced Document Parsing**: The new `ai_parse_document` function makes it effortless to extract structured information from complex documents like PDFs and invoices.
+*   **Fully Integrated**: Natively integrated with Databricks SQL, Unity Catalog for governance, and the broader Databricks platform.
 
 ## Related Features
-- Unity Catalog
-- Databricks SQL
-- Model Serving
-- AI Gateway
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/ai-functions
-- Community: community.databricks.com 
+*   [Databricks SQL](../../databricks-sql/README.md)
+*   [Unity Catalog](../../unity-catalog/README.md)
+*   [Model Serving](../model-serving/)
+*   [AI Gateway](../ai-gateway/)

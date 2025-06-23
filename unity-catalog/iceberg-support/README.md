@@ -1,36 +1,43 @@
 # Apache Iceberg Support in Unity Catalog
 
-- **Official Blog Post**: [Announcing full Apache Iceberg™ support in Databricks](https://www.databricks.com/blog/announcing-full-apache-iceberg-support-databricks)
-- **Official Documentation**: [What is Apache Iceberg in Databricks?](https://docs.databricks.com/aws/en/iceberg/)
+## Overview
+Unity Catalog now provides full, native support for the Apache Iceberg table format, enabling organizations to break down data silos and embrace a truly open lakehouse architecture. This capability allows you to manage all of your data—whether in Delta Lake or Iceberg format—under a single, unified governance model, accessible from any compatible engine or tool.
+
+This release introduces two major features: **Managed Iceberg Tables** in Unity Catalog, and **Lakehouse Federation** for external Iceberg catalogs. This means you can create and govern Iceberg tables directly in Databricks, benefiting from performance optimizations like Liquid Clustering, or you can govern Iceberg tables that live in external catalogs like AWS Glue or a Hive Metastore, all without ever moving or copying the data.
+![A diagram of the Unity Catalog Iceberg Architecture](https://www.databricks.com/sites/default/files/inline-images/announcing-full-iceberg-support-databricks-blog-imgs-4.png?v%3D1749625362)
 
 ## Resources
-- [Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/databricks-apache-icebergtm-managed-and-foreign-tables-unity-catalog)
-- [Data + AI Summit Session Video](https://www.youtube.com/watch?v=Y70RTULwb30)
 
-  [![Apache Iceberg Support in Unity Catalog](https://img.youtube.com/vi/Y70RTULwb30/mqdefault.jpg)](https://www.youtube.com/watch?v=Y70RTULwb30)
+### Blogs & Docs
+*   [Announcing full Apache Iceberg™ support in Databricks](https://www.databricks.com/blog/announcing-full-apache-iceberg-support-databricks)
+*   [Official Documentation: Read and write Iceberg tables](https://docs.databricks.com/en/query/iceberg.html)
+*   [Iceberg REST Catalog API Specification](https://iceberg.apache.org/spec/#rest-catalog-api)
 
-- [Iceberg REST Catalog API](https://iceberg.apache.org/spec/#rest-catalog-api)
-- [Unity Catalog Documentation](https://docs.databricks.com/data-governance/unity-catalog/index.html)
+### Sessions & Videos
+| | |
+|---|---|
+| [![Apache Iceberg Support in Unity Catalog](https://img.youtube.com/vi/Y70RTULwb30/0.jpg)](https://www.youtube.com/watch?v=Y70RTULwb30) | **Databricks + Apache Iceberg™: Managed and Foreign Tables in Unity Catalog**<br/>[Data + AI Summit Session Details](https://www.databricks.com/dataaisummit/session/databricks-apache-icebergtm-managed-and-foreign-tables-unity-catalog) |
 
-## Overview
-Unity Catalog now provides full Apache Iceberg™ support, unlocking the complete Apache Iceberg and Delta Lake ecosystems. This Public Preview introduces two major capabilities: **Managed Iceberg Tables** and **Lakehouse Federation** for external Iceberg catalogs. These features enable organizations to break down data silos and resolve ecosystem incompatibilities while maintaining enterprise-grade governance and security.
+## Why It Matters
+*   **Eliminates Data Silos**: Provides a single point of access and governance for both Delta Lake and Apache Iceberg tables, regardless of where they are stored or managed.
+*   **Prevents Vendor Lock-in**: Ensures you can use the best engine for the job, allowing any Iceberg-compatible tool to connect to and interact with your governed data.
+*   **Unified Governance**: Extends Unity Catalog's enterprise-grade governance—including fine-grained access controls, auditing, and lineage—to your entire Iceberg data estate.
+*   **High Performance on Open Formats**: Brings Databricks' world-class performance optimizations, like Predictive Optimization, to the Iceberg ecosystem.
 
-![Unity Catalog Iceberg Architecture](https://www.databricks.com/sites/default/files/inline-images/announcing-full-iceberg-support-databricks-blog-imgs-4.png?v%3D1749625362)
 ## Key Features
 
 ### Managed Iceberg Tables
-- **Fully Open Iceberg Catalog**: Write and read Iceberg tables using Databricks or external engines via Unity Catalog's Iceberg REST Catalog API
-- **Predictive Optimization**: Automatic table maintenance including Liquid Clustering, snapshot expiration, and file optimization
-- **Platform Integration**: Seamless integration with DBSQL, Mosaic AI, Delta Sharing, and Materialized Views
-- **Open Ecosystem Access**: Compatible with any Iceberg client (Apache Spark™, Apache Flink, Trino, PyIceberg, etc.)
+*   **Fully Open Iceberg Catalog**: Create, read, and write Iceberg tables using Databricks or any external engine through Unity Catalog's implementation of the Iceberg REST Catalog API.
+*   **Predictive Optimization**: Automatically apply performance-enhancing table maintenance like Liquid Clustering, snapshot expiration, and file optimization to your Iceberg tables.
+*   **Full Platform Integration**: Seamlessly use Iceberg tables with Databricks SQL, Mosaic AI, Delta Sharing, and Materialized Views.
 
-### Lakehouse Federation
-- **External Catalog Access**: Query and govern Iceberg tables managed by external catalogs (AWS Glue, Hive Metastores, Snowflake Horizon Catalog)
-- **Unified Governance**: Apply Unity Catalog's fine-grained access controls, lineage, and auditing across all data
-- **Zero-Copy Access**: Access external Iceberg tables without data duplication
+### Lakehouse Federation for Iceberg
+*   **External Catalog Access**: Query, govern, and manage Iceberg tables that reside in external catalogs like AWS Glue, Hive Metastores, or even a Snowflake Horizon Catalog.
+*   **Zero-Copy and In-Place Governance**: Apply Unity Catalog's fine-grained security and governance to your external Iceberg tables without ever needing to move or replicate the data.
 
 ### Core Capabilities
-- **Schema Evolution**: Support for Iceberg's advanced schema evolution capabilities, including the `VARIANT` type for semi-structured data.
+- **Schema Evolution**: Support for Iceberg's advanced schema evolution capabilities, 
+including the `VARIANT` type for semi-structured data.
 - **Time Travel**: Access to historical data versions and snapshots
 - **Partition Evolution**: Dynamic partition management and optimization
 - **ACID Transactions**: Full transactional support for data consistency
@@ -39,13 +46,6 @@ Unity Catalog now provides full Apache Iceberg™ support, unlocking the complet
 - **Deletion Vectors**: Enabling merge-on-read semantics for improved performance.
 - **Row IDs**: Facilitating incremental data processing.
 - **Write Defaults**: Enhancing concurrency and write performance.
-
-## Why It Matters
-- **Breaks Data Silos**: Connect to Unity Catalog from any engine and access all data across catalogs and formats
-- **Future-Proof Architecture**: Leverage the entire Lakehouse ecosystem with open standards
-- **Unified Governance**: Single interface for data discovery and governance across all data assets
-- **Performance Optimization**: Out-of-box performance with Predictive Optimization
-- **Vendor Lock-in Prevention**: Use your chosen engines regardless of catalog restrictions
 
 ## Code Examples
 ```sql
@@ -66,21 +66,14 @@ SELECT * FROM catalog.schema.iceberg_table TIMESTAMP AS OF '2024-01-01 10:00:00'
 ALTER TABLE catalog.schema.iceberg_table ADD COLUMNS (new_column STRING);
 ```
 
-## Best Practices
-- **Table Properties**: Use appropriate Iceberg table properties for your use case
-- **Versioning Strategy**: Implement proper snapshot management and retention policies
-- **Performance Monitoring**: Monitor table performance and leverage Predictive Optimization
-- **Governance**: Follow Unity Catalog governance best practices for access control and lineage
-- **Federation**: Use Lakehouse Federation to unify governance across external catalogs
-- **Open Standards**: Leverage the Iceberg REST Catalog API for maximum ecosystem compatibility
-
 ## Launch Partners
 The following partners support Unity Catalog's Iceberg capabilities:
-- Atlan, Buf, CelerData, Clickhouse, dbt Labs, dltHub, Fivetran, Informatica, PuppyGraph, Redpanda, RisingWave, StreamNative
+- Atlan, Buf, CelerData, Clickhouse, dbt Labs, dltHub, Fivetran, Informatica, 
+PuppyGraph, Redpanda, RisingWave, StreamNative
 
 ## Related Features
-- [UC Metrics](../uc-metrics/)
-- [Attribute-Based Access Control (ABAC)](../abac/)
-- [Tag Policies](../tag-policies/)
-- [Data Classification](../data-classification/)
-- [Anomaly Detection](../anomaly-detection/)
+*   [UC Metrics](../uc-metrics/)
+*   [Attribute-Based Access Control (ABAC)](../abac/)
+*   [Tag Policies](../tag-policies/)
+*   [Data Classification](../data-classification/)
+*   [Anomaly Detection](../anomaly-detection/)

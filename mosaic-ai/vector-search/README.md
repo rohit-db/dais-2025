@@ -1,58 +1,41 @@
-# Vector Search
+# Mosaic AI Vector Search
 
 ## Overview
-Vector Search is a new capability in Databricks that provides a storage-optimized vector store with compute/storage separation. It enables efficient similarity search and retrieval for AI applications, particularly those using embeddings and vector representations.
 
-## Key Features
-- **Storage-Optimized**: Efficient storage and retrieval of vector embeddings
-- **Compute/Storage Separation**: Independent scaling of compute and storage resources
-- **High Performance**: Optimized for fast similarity search operations
-- **Integration with Unity Catalog**: Governed access to vector data
-- **Scalable Architecture**: Handles large-scale vector search workloads
+Mosaic AI Vector Search is the backbone of high-quality retrieval systems and RAG applications on the Databricks platform. It provides a highly scalable and cost-efficient vector database for storing and querying the embedding vectors that power semantic search and generative AI. Vector Search is deeply integrated with the rest of the Databricks platform, simplifying the entire RAG development pipeline from embedding generation to deployment.
 
-## Why It Matters
-- Enables efficient similarity search for AI applications
-- Reduces costs through optimized storage and compute separation
-- Simplifies the deployment of vector search applications
-- Provides enterprise-grade security and governance
-
-## Demo Guide
-1. **Setup**
-   - Configure vector search workspace
-   - Set up storage and compute resources
-   - Configure Unity Catalog integration
-
-2. **Key Demo Scenarios**
-   - Creating and managing vector indexes
-   - Performing similarity searches
-   - Scaling compute and storage independently
-   - Monitoring performance and costs
+The latest generation of Vector Search has been completely re-architected with a groundbreaking disaggregation of compute and storage. This new, storage-optimized architecture allows it to scale to billions of vectors while delivering up to 7x lower costs. This makes it economically feasible for the first time to build sophisticated, high-accuracy RAG applications across your entire enterprise data estate.
 
 ## Resources
-- [Official Documentation](https://docs.databricks.com/vector-search)
-- [Blog Post](https://www.databricks.com/blog/vector-search)
-- [Technical Deep Dive](https://www.databricks.com/blog/vector-search-technical)
-- [Architecture Guide](https://docs.databricks.com/vector-search/architecture)
 
-## Code Examples
-```python
-# Example code will be added here
-```
+### Blogs & Docs
+*   [Announcing Storage-Optimized Endpoints for Vector Search](https://www.databricks.com/blog/announcing-storage-optimized-endpoints-vector-search)
+*   [Mosaic AI Announcements at Data + AI Summit 2025](https://www.databricks.com/blog/mosaic-ai-announcements-data-ai-summit-2025)
+*   [Official Documentation](https://docs.databricks.com/en/generative-ai/vector-search.html)
 
-## Best Practices
-- Optimize vector dimensions and indexing
-- Monitor storage and compute usage
-- Implement proper error handling
-- Follow security best practices
+### Sessions & Videos
+
+| | |
+| --- | --- |
+| [![Beyond Simple RAG: Unlocking Quality, Scale, and Cost-Efficient Retrieval](https://img.youtube.com/vi/pUKvTs6Eg4k/0.jpg)](https://www.youtube.com/watch?v=pUKvTs6Eg4k&t=6s) | **Beyond Simple RAG: Unlocking Quality, Scale, and Cost-Efficient Retrieval**<br/>[View Session Details](https://www.databricks.com/dataaisummit/session/beyond-simple-rag-unlocking-quality-scale-and-cost-efficient-retrieval) |
+
+## Why It Matters
+
+*   **Build RAG on Your Entire Dataset**: The dramatic cost reduction and scalability make it possible to build RAG applications over all your enterprise data, not just a small subset.
+*   **Economically Feasible AI**: Unlocks the ability to build sophisticated semantic search and GenAI applications without prohibitive costs.
+*   **Simplified RAG Pipelines**: An integrated vector database eliminates the complexity of managing a separate vector database and data-syncing pipelines.
+*   **Improved AI Quality**: A high-quality retrieval system is the foundation of a high-quality RAG agent; Vector Search provides that foundation.
+
+## Key Features
+
+*   **Storage-Optimized Architecture**: A new architecture that separates compute and storage, enabling massive scale at a low cost.
+*   **7x Lower Cost**: Breakthrough in efficiency makes it affordable to scale vector search to billions of vectors.
+*   **Massive Scalability**: Designed to handle enterprise-scale workloads with billions of vectors.
+*   **Foundation for RAG**: Provides the core retrieval component for building high-quality RAG agents and other semantic search systems.
+*   **Integrated with Unity Catalog**: All vector indexes are governed by Unity Catalog, providing a single, unified governance model.
 
 ## Related Features
-- Unity Catalog
-- Model Serving
-- AI Gateway
-- Serverless GPUs
-
-## Support
-For questions or issues:
-- Product Support: support@databricks.com
-- Documentation: docs.databricks.com/vector-search
-- Community: community.databricks.com 
+*   [Agent Bricks](../agent-bricks/)
+*   [Model Serving](../model-serving/)
+*   [MLflow 3.0](../mlflow-3.0/)
+*   [Unity Catalog](../../unity-catalog/README.md)

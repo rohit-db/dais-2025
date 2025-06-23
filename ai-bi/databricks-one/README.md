@@ -4,12 +4,14 @@
 Databricks One is a new, visually redesigned product experience purpose-built for business users. It provides a simple, intuitive, and secure way for everyone in an organization—not just technical practitioners—to get insights from data and AI with the least possible friction. It acts as a single, streamlined entry point for business teams to interact with AI/BI Dashboards, ask questions of AI/BI Genie, and use custom Databricks Apps, all without needing to navigate the traditional, more technical Databricks workspace.
 
 ## Resources
-- **Official Blog Post**: [Introducing Databricks One](https://www.databricks.com/blog/introducing-databricks-one)
-- **Keynote Announcement**: The introduction of Databricks One at Data + AI Summit 2025.
 
-| |
-|---|
-| [![Databricks One Keynote Announcement](https://img.youtube.com/vi/0pys27kA67U/0.jpg)](https://www.youtube.com/watch?v=0pys27kA67U&t=8720s) |
+### Blogs & Docs
+- **Official Blog Post**: [Introducing Databricks One](https://www.databricks.com/blog/introducing-databricks-one)
+
+### Sessions & Videos
+| | |
+|---|---|
+| [![Databricks One Keynote Announcement](https://img.youtube.com/vi/0pys27kA67U/0.jpg)](https://www.youtube.com/watch?v=0pys27kA67U&t=8720s) | **Databricks One Keynote**<br/>The introduction of Databricks One at Data + AI Summit 2025. |
 
 ## Why It Matters
 Most business users don't have the time or desire to work in a complex technical environment. Databricks One solves this by creating a focused, purpose-built experience that removes clutter and guides users to the insights that matter most to them. It democratizes access to data and AI, empowering teams to make smarter, faster decisions while ensuring that all interactions are secure and governed through Unity Catalog.

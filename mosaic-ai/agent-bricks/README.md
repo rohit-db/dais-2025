@@ -1,17 +1,5 @@
 # Agent Bricks: Auto-Optimized Agents Using Your Data
 
-- **Official Blog Post**: [Introducing Agent Bricks: Auto-Optimized Agents Using Your Data](https://www.databricks.com/blog/introducing-agent-bricks)
-- **Official Documentation**: [Agent Bricks Documentation](https://docs.databricks.com/aws/en/generative-ai/agent-bricks/)
-
-## Resources
-- [Data + AI Summit Session](https://www.databricks.com/dataaisummit/session/agent-bricks-building-multi-agent-systems-structured-and-unstructured)
-- [Agent Bricks: Building Multi-Agent Systems for Structured and Unstructured Information](https://www.youtube.com/watch?v=w8y_CGo1KQU&t=208s)
-
-   [![Agent Bricks YouTube Link](https://img.youtube.com/vi/w8y_CGo1KQU/mqdefault.jpg)](https://www.youtube.com/watch?v=w8y_CGo1KQU&t=208s)
-
-- [MLflow 3.0 Documentation](https://docs.databricks.com/mlflow/)
-- [Mosaic AI Platform](https://docs.databricks.com/generative-ai/)
-
 ## Overview
 Agent Bricks is a platform for building AI agents that are optimized for enterprise data and tasks. Users specify their problem and data, and Agent Bricks builds the best agent system based on quality and cost trade-offs. Rather than managing the overwhelming complexity of agent development, teams can focus on what matters most: defining their agent's purpose and providing strategic guidance on quality through natural language feedback. Agent Bricks handles the rest, automatically generating evaluation suites and auto-optimizing the quality.
 
@@ -19,6 +7,20 @@ Based on experiences working with customers to ship AI into production, Agent Br
 - **Evaluation is difficult**: Many enterprise AI tasks are difficult to evaluate, for both humans and automated LLM judges
 - **Too many knobs**: Agents are complex AI systems with many components, each with their own optimization parameters
 - **Cost and quality**: Teams often find that high-quality agents are too expensive to scale into production
+
+## Resources
+
+### Blogs & Docs
+*   [Introducing Agent Bricks: Auto-Optimized Agents Using Your Data](https://www.databricks.com/blog/introducing-agent-bricks)
+*   [Mosaic AI Announcements at Data + AI Summit 2025](https://www.databricks.com/blog/mosaic-ai-announcements-data-ai-summit-2025)
+*   [Official Documentation](https://docs.databricks.com/aws/en/generative-ai/agent-bricks/)
+
+### Sessions & Videos
+
+| | |
+| --- | --- |
+| [![Building and Scaling Production AI Systems with Mosaic AI](https://img.youtube.com/vi/9C-iZqa3ORc/0.jpg)](https://www.youtube.com/watch?v=9C-iZqa3ORc) | **Building and Scaling Production AI Systems with Mosaic AI**<br/>[View Session Details](https://www.databricks.com/dataaisummit/session/building-and-scaling-production-ai-systems-mosaic-ai) |
+| [![Agent Bricks YouTube Link](https://img.youtube.com/vi/w8y_CGo1KQU/0.jpg)](https://www.youtube.com/watch?v=w8y_CGo1KQU&t=208s) | **Agent Bricks: Building Multi-Agent Systems for Structured and Unstructured Information**<br/>[View Session Details](https://www.databricks.com/dataaisummit/session/agent-bricks-building-multi-agent-systems-structured-and-unstructured) |
 
 ## Use Cases
 ![Agent Bricks](https://www.databricks.com/sites/default/files/styles/max_1000x1000/public/2025-06/DAIS25-What-s-New-in-Mosaic-AI-OG-02-2.png?itok%3D3GmqQ_D2%26v%3D1749593010)
@@ -121,16 +123,6 @@ The system can handle complex scenarios such as:
 - Routing queries to appropriate specialized agents
 - Combining structured data (customer plans, usage) with unstructured data (support tickets, documentation)
 - Multi-step queries like checking a customer's plan, data usage, and suggesting solutions for speed issues
-
-## Best Practices
-- **Clear Task Definition**: Start with a clear, natural language description of what you want the agent to accomplish
-- **Strategic Feedback**: Provide high-level guidance on quality through natural language feedback
-- **Evaluation Focus**: Trust the automatic evaluation framework to measure progress
-- **Cost-Quality Balance**: Choose between cost-optimized and quality-optimized models based on your needs
-- **Multi-Agent Design**: Create specialized agents for different data types and use a supervisor for coordination
-- **Governance Implementation**: Implement proper data access controls and policies from the start
-- **Topic-Specific Spaces**: Build Genie spaces for specific business topics with clear instructions and examples
-- **Continuous Monitoring**: Monitor agent performance in production and provide ongoing feedback
 
 ## Technical Architecture
 - **Powered by MLflow 3**: Automatic creation of evaluation datasets and custom judges
