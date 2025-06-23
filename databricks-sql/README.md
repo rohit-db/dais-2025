@@ -10,7 +10,6 @@
   [![What's New in Databricks SQL](https://img.youtube.com/vi/q9Pv9GuTv38/mqdefault.jpg)](https://www.youtube.com/watch?v=q9Pv9GuTv38&t=800s)
 
 - [Databricks SQL Serverless](https://docs.databricks.com/sql/admin/sql-endpoints.html)
-- [Unity Catalog Documentation](https://docs.databricks.com/data-governance/unity-catalog/index.html)
 
 ## Overview
 Databricks SQL (DBSQL) is a data warehouse built on lakehouse architecture, operating on cloud storage with formats like Delta Lake and Iceberg, governed by Unity Catalog, and integrated with other Databricks apps and third-party tools. Over half of workloads come from external tools like PowerBI and Tableau.

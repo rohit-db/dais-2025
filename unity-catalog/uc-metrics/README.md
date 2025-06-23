@@ -9,6 +9,8 @@
 
    [![Unity Catalog Metrics YouTube Link](https://img.youtube.com/vi/gMCFWSTgUoQ/mqdefault.jpg)](https://www.youtube.com/watch?v=gMCFWSTgUoQ)
 
+- [Unity Metrics View Documentation](https://docs.databricks.com/aws/en/metric-views/)
+
 ## Overview
 
 Unity Catalog Metrics solves "metric sprawl" by enabling you to define business metrics once as "metric views" in Unity Catalog, then trust them everywhere. Define dimensions and measures using SQL, then query at any grain without creating new views.
@@ -20,7 +22,7 @@ Organizations face "metric sprawl"—the same business metric (like revenue per 
 - **Maintenance overhead** when changes require updates in multiple places
 
 
-
+![What's a Metric view](https://docs.databricks.com/aws/en/assets/images/what-is-f1090f388428085b3a7cd9a6876f7649.png)
 
 ## Unity Catalog Metrics
 - **Centralized Definition**: Define metrics once as "metric views" in Unity Catalog
