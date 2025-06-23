@@ -1,14 +1,10 @@
 # DAIS 2025 Announcements Repository
 
 This repository organizes and summarizes all major product announcements from the **Databricks Data + AI Summit 2025**, grouped by key platform categories. 
-It is designed as a field enablement toolkit.
 
 ---
 
 ## Key Resources
-This section contains the primary, high-level resources covering all major announcements from the Data + AI Summit.
-
-### General Resources
 *   **Data + AI Summit Homepage**: [Watch sessions on-demand](https://www.databricks.com/dataaisummit/)
 *   **Official Announcements Blog**: [All platform announcements](https://www.databricks.com/blog/category/platform/announcements?categories=announcements)
 *   **Databricks Documentation**: [Main documentation portal](https://docs.databricks.com/aws/en/)
@@ -22,7 +18,7 @@ This section contains the primary, high-level resources covering all major annou
 ---
 
 ## Summary of Announcements
-
+![Announcements](/_resources/images/announcements.png)
 ### Mosaic AI (GenAI & ModelOps)
 - **Agent Bricks**: Auto-optimized domain-specific agents with evaluation and tuning built-in.
 - **MLflow 3.0**: Unified experimentation, observability, and governance for GenAI and ML.

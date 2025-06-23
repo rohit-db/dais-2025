@@ -1,0 +1,4 @@
+.databricks
+.vscode
+.venv
+.DS_Store
