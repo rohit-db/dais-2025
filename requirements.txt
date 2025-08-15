@@ -1,2 +1,3 @@
 setuptools
 databricks-connect
+psycopg2-binary

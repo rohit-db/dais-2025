@@ -36,6 +36,7 @@ With MLflow 3.0, organizations gain a single, consistent platform to manage the 
 *   **Open, Extensible Standard**: Built on an open-source core, allowing you to connect and manage assets across any tool, platform, or environment.
 
 ## Related Features
+*   [Agent Monitoring](monitoring/) - Production-ready agent monitoring with MLflow 3.0
 *   [Agent Bricks](../agent-bricks/)
 *   [AI Gateway](../ai-gateway/)
 *   [Model Serving](../model-serving/)
